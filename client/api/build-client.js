@@ -6,8 +6,7 @@ export default ({ req }) => {
 
     return axios.create({
       baseURL:
-        'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
-      // 'http://www.tribe-saas.com',
+        'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/',
       headers: req.headers,
     })
   } else {
@@ -17,3 +16,5 @@ export default ({ req }) => {
     })
   }
 }
+//  baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+// baseURL: 'http://www.tribe-saas.com/',
