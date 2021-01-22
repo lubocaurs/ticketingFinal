@@ -5,7 +5,7 @@ export default ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'http://www.tribe-saas.com/',
+      baseURL: 'http://www.app.tribe-saas.com/',
       headers: req.headers,
     })
   } else {
